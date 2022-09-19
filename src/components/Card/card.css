@@ -1,0 +1,22 @@
+.cardContainer{
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(72, 72, 72);
+}
+
+.cardTitle{
+    color: white;
+}
+
+.cardBrand{
+    color: white;
+}
+
+.cardPrice{
+    color: white;
+}
+
+.cardImg{
+    height: 30vh;
+}
