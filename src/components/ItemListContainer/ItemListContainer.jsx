@@ -5,7 +5,7 @@ const ItemListContainer = (props) => {
     return(
         <div className="ItemListContainer">
             <h1 className="tituloItemListContainer">{props.greeting}</h1>
-            <div>
+            <div className="flexWrapperContainer">
                 <FlexWrapper />
             </div>
         </div>
