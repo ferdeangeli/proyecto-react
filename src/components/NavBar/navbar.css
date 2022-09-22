@@ -16,6 +16,8 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 5px;
+    padding: 0;
+    margin-left: 10px;
 }
 
 .loginCartWidget{
