@@ -1,6 +1,7 @@
+import "bootstrap/dist/css/bootstrap.css";
+import * as bootstrap from "bootstrap";
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import FlexWrapper from "./components/FlexWrapper/FlexWrapper.jsx"
 
 function App() {
   return (
