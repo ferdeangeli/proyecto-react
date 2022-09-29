@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kdam+Thmor+Pro&family=Roboto:wght@100;300;400;500&display=swap');
+
+
 .ItemListContainer{
     display: flex;
     flex-direction: column;
@@ -7,15 +10,9 @@
 }
 
 .tituloItemListContainer{
-    font-size: 60px;
+    font-size: 40px;
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.flexWrapperContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
 

@@ -1,0 +1,81 @@
+footer{    
+    border-top: solid 2px #6CCC9D;
+}
+
+.pie{
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 1%;
+    font-family: 'Roboto', sans-serif; color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.pieLogo{
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.pieLogo img{
+    height: 50px;
+}
+
+
+.pieLinksIzq{
+    text-align: right;
+    font-family: 'Roboto', sans-serif, sans-serif;color: rgb(0, 0, 0);
+    font-weight: 400;
+    padding: 0.3em;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+.pieLinksIzq a{
+    text-align: right;
+    font-family: 'Roboto', sans-serif, sans-serif;color: rgb(0, 0, 0);
+    font-weight: 400;
+    padding: 0.3em;
+    text-decoration: none;
+    list-style: none;
+}
+
+.pieLinksIzq img{
+    height: 20px;
+    vertical-align: middle;
+}
+
+.pieLinksDer{
+    text-align: left;
+    font-family: 'Roboto', sans-serif, sans-serif;color: rgb(0, 0, 0);
+    font-weight: 400;
+    padding: 0.3em;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+.pieLinksDer a{
+    text-align: left;
+    font-family: 'Roboto', sans-serif, sans-serif;color: rgb(0, 0, 0);
+    font-weight: 400;
+    padding: 0.3em;
+    text-decoration: none;
+    list-style: none;
+}
+
+.pieLinksDer img{
+    height: 22px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px){
+    h1{
+        font-size: 22px;
+    }
+
+    a{
+        font-size: 12px;
+    }
+}

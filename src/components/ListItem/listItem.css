@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kdam+Thmor+Pro&family=Roboto:wght@100;300;400;500&display=swap');
+
+.cardContainer{
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(72, 72, 72);
+}
+
+.cardContainer:hover{
+    transform: perspective(700px);
+    transform-origin: center center -30px;
+    box-shadow: 0 0 10px #3c3c3c, 0 0 20px #3c3c3c, 0 0 20px #6CCC9D, 0 0 80px #6CCC9D;
+}
+
+.cardTitle{
+    color: white;
+    font-size: 16px;
+}
+
+.cardPrice{
+    color: white;
+    font-size: 18px;
+}
+
+.cardImg{
+    height: 25vh;
+}
+
+.cardCategory{
+    color: white;
+    font-size: 12px;
+    margin: 0;
+}
