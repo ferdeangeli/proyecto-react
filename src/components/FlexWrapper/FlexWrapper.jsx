@@ -10,11 +10,13 @@ const FlexWrapper = (props) => {
                 return (
                     <ListItem 
                         key={producto.id}
+                        id={producto.id}
                         img={producto.img}
                         category={producto.category}
                         title={producto.title}
                         brand={producto.brand}
                         price={producto.price} 
+                        stock={producto.stock}
                     />
                 );
                         

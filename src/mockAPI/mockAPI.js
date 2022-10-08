@@ -7,6 +7,7 @@ const data = [
     brand: "Hellbot",
     stock: 10,        
     category: "Impresora 3D FDM",
+    description: "Hellbot Magna 2 es una impresora 3D pensada para facilitarte el trabajo, podrás operarla mediante su pantalla táctil o vía WiFi. Gracias a su doble extrusor 2 en 1 lograrás resultados increíbles combinando colores y materiales.",
   },
 
   {
@@ -17,6 +18,7 @@ const data = [
     brand: "Hellbot",
     stock: 3,        
     category: "Impresora 3D FDM",
+    description: "Hellbot Magna 2 es una impresora 3D pensada para facilitarte el trabajo, podrás operarla mediante su pantalla táctil o vía WiFi. Gracias a su doble extrusor 2 en 1 lograrás resultados increíbles combinando colores y materiales.",
   },
 
   {
@@ -27,6 +29,7 @@ const data = [
     brand: "Creality",
     stock: 6,        
     category: "Impresora 3D FDM",
+    description: "Creality Ender 3 v2 es una impresora 3D silenciosa, gracias a su mejora de driver, sencilla de usar y con cama de vidrio Carborundum que te permitirá despegar fácilmente las impresiones.",
   },
 
   {
@@ -37,6 +40,7 @@ const data = [
     brand: "Hellbot",
     stock: 15,        
     category: "Impresora 3D FDM",
+    description: "SE parte de la EVOLUCIÓN con Hellbot Magna 32 BITS.",
   },
 
   {
@@ -47,6 +51,7 @@ const data = [
     brand: "Creality",
     stock: 4,        
     category: "Impresora 3D Resina",
+    description: "Creality Halot One es una impresora 3D de resina con pantalla monocromática LCD con resolución 2k, conectividad WiFi y filtro de carbón activado para la emisión de gases tóxicos.",
   },
 
   {
@@ -57,6 +62,7 @@ const data = [
     brand: "Creality",
     stock: 3,        
     category: "Impresora 3D FDM",
+    description: "La nueva impresora de Creality que llega para revolucionar, con nivelación automática CR-Touch, extrusor directo Sprite y cama flexible PC para garantizar la adherencia de tus impresiones.",
   },
 
   {
@@ -67,6 +73,7 @@ const data = [
     brand: "Hellbot",
     stock: 3,        
     category: "Impresora 3D FDM",
+    description: "La única Magna 2 que te permite imprimir con extrusor directo, hará que tus impresiones sean rápidas y eficaces, además posee un extrusor Dual Drive que proporciona una fuerza de empuje superior, ¡imprimir con todos los materiales ahora es posible!",
   },
 
   {
@@ -77,6 +84,7 @@ const data = [
     brand: "Creality",
     stock: 6,        
     category: "Impresora 3D FDM",
+    description: "Gracias a su facilidad de uso y a su versatilidad en cuanto a tipos de filamento, la impresora 3D Creality Ender 3 es una de las más destacadas del mercado.",
   },
 
   {
@@ -87,6 +95,7 @@ const data = [
     brand: "Creality",
     stock: 2,        
     category: "Impresora 3D FDM",
+    description: "La nueva impresora 3D de Creality, Ender 2 Pro es ideal para principiantes gracias a su diseño que facilita la usabilidad.",
   },
 
   {
@@ -97,6 +106,7 @@ const data = [
     brand: "Creality",
     stock: 4,        
     category: "Impresora 3D Resina",
+    description: "La máquina de lavado y curado Creality UW-02 es la actualización de UW-01. Un paso para finalizar el post procesado de sus impresiones 3D hechas en resina.",
   },
 
   {
@@ -107,36 +117,40 @@ const data = [
     brand: "Grilon3",
     stock: 20,        
     category: "Filamentos",
+    description: "Filamento PLA Grilon3, calidad premium que no te va a fallar.",
   },
 
   {
-    id: 11,
+    id: 12,
     title: "PETG Clear Rojo",
     img: "/assets/img/img-productos/petgClearRojoGrilon3.jpg",
     price: 2680,
     brand: "Grilon3",
     stock: 4,        
     category: "Filamentos",
+    description: "Filamento PETG Grilon3, calidad premium que no te va a fallar.",
   },
 
   {
-    id: 12,
+    id: 13,
     title: "Simpliflex Celeste",
     img: "/assets/img/img-productos/simpliflexCelesteGrilon3.jpg",
     price: 4160,
     brand: "Grilon3",
     stock: 3,        
     category: "Filamentos",
+    description: "Filamento Simpliflex Grilon3, un material técnico que te va a permitir imprimir piezas flexibles y con facilidad gracias a su tratamiento de endurecimiento superficial.",
   },
 
   {
-    id: 13,
+    id: 14,
     title: "PLA Hueso",
     img: "/assets/img/img-productos/plaHueso3n3.jpg",
     price: 2200,
     brand: "3n3",
     stock: 5,        
     category: "Filamentos",
+    description: "Filamento PLA 3n3, economía y calidad combinadas para tus necesidades.",
   },
     
 ];
@@ -144,5 +158,11 @@ const data = [
 export function getProductos(){
   return new Promise((resolve) => {
     resolve(data);
+  })
+}
+
+export function getProducto(id){
+  return new Promise((resolve) => {
+    resolve(data[(Number(id)-1)]);
   })
 }

@@ -1,6 +1,7 @@
 import "./navbar.css";
 import "bootstrap/dist/css/bootstrap.css";
 import * as bootstrap from "bootstrap";
+import {Link} from "react-router-dom"
 
 const NavBar = (props) => {
     return (
@@ -9,7 +10,7 @@ const NavBar = (props) => {
             <div className="headerSuperior">
                 <ul className="accesosHeader">
                     <li><a href=""><img src="/assets/img/navbar/ubicacionIcon.png" alt="ubicacionIcon"/></a></li>
-                    <li><a href="https://www.instagram.com/carbono.3d/?hl=es-la" target="_blank"><img src="/assets/img/navbar/instagramIcon.png" alt="instagramcon"/></a></li>
+                    <li><a href="https://www.instagram.com/carbono.3d/?hl=es-la" target="_blank"><img src="/assets/img/navbar/instagramIcon.png" alt="instagramIcon"/></a></li>
                     <li><a href="https://www.facebook.com/Carbono3d-1160041694135125" target="_blank"><img src="/assets/img/navbar/facebookIcon.png" alt="facebookIcon"/></a></li>
                 </ul>
                 <div className="loginCartWidget">
@@ -40,19 +41,19 @@ const NavBar = (props) => {
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                <Link class="nav-link active" aria-current="page" to="/">Inicio</Link>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Impresoras 3D</a>
+                                <Link class="nav-link" aria-current="page" to="/a">Impresoras 3D</Link>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Filamentos</a>
+                                <Link class="nav-link" aria-current="page" to="#">Filamentos</Link>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Blog</a>
+                                <Link class="nav-link" aria-current="page" href="#">Blog</Link>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Contacto</a>
+                                <Link class="nav-link" aria-current="page" href="#">Contacto</Link>
                                 </li>
                                 {/* <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
