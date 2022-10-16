@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./fondo.jpg); background-size: cover;
+    background-image: url(/public/assets/img/fondo.jpg); background-size: cover;
 }
 
 .tituloItemListContainer{

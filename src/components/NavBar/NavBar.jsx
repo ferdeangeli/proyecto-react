@@ -14,8 +14,8 @@ const NavBar = (props) => {
                     <li><a href="https://www.facebook.com/Carbono3d-1160041694135125" target="_blank"><img src="/assets/img/navbar/facebookIcon.png" alt="facebookIcon"/></a></li>
                 </ul>
                 <div className="loginCartWidget">
-                    <a className="loginIcon"><img src="/assets/img/navbar/loginIcon.png" alt="loginIcon" /></a>
-                    <a className="CartWidget"><img src="/assets/img/navbar/CartWidget.png" alt="cartwidget" /></a>
+                    <Link to={"/login"} className="loginIcon"><img src="/assets/img/navbar/loginIcon.png" alt="loginIcon" /></Link>
+                    <Link to={"/CartView"} className="CartWidget"><img src="/assets/img/navbar/CartWidget.png" alt="cartwidget" /></Link>
                 </div>
             </div>
 
