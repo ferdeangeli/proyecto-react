@@ -9,24 +9,27 @@ import {UserContextProvider} from './context/UserContext';
 import FirebaseApp from "./services/firebase";
 import UserForm from "./components/UserForm/UserForm";
 import CartView from "./components/CartView/Cartview";
+import { CartContextProvider } from "./context/CartContext";
 
 function App() {
 
-  console.log(FirebaseApp)
   return (
+    
     <BrowserRouter>
-      <UserContextProvider>
-        <div className="App">
-          <NavBar />
-          <Routes>
-            <Route path="/" element={<ItemListContainer greeting="LA IMPRESORA 3D QUE BUSCAS ESTA EN CARBONO"/>} />
-            <Route path="/item/:id" element={<ItemDetailContainer />} />
-            <Route path="/login" element={<UserForm />} />
-            <Route path="/cartview" element={<CartView />} />
-          </Routes>
-          <Footer />
-        </div>
-      </UserContextProvider>
+      <CartContextProvider>
+        <UserContextProvider>
+          <div className="App">
+            <NavBar />
+            <Routes>
+              <Route path="/" element={<ItemListContainer greeting="LA IMPRESORA 3D QUE BUSCAS ESTA EN CARBONO"/>} />
+              <Route path="/item/:id" element={<ItemDetailContainer />} />
+              <Route path="/login" element={<UserForm />} />
+              <Route path="/cartview" element={<CartView />} />
+            </Routes>
+            <Footer />
+          </div>        
+        </UserContextProvider>
+      </CartContextProvider>
     </BrowserRouter>
   );
 }

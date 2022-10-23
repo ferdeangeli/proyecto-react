@@ -1,5 +1,5 @@
 import "./itemdetailcontainer.css";
-import { getProducto } from "../../mockAPI/mockAPI";
+import { getProducto } from "../../services/firebase";
 import {useState, useEffect} from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import {useParams} from "react-router-dom";
@@ -7,11 +7,11 @@ import {useParams} from "react-router-dom";
 const ItemDetailContainer = (props) => {
     const [detalleProducto, setDetalleProducto] = useState([])
     
-    const id = useParams().id
+    const idParam = useParams().id
 
     useEffect(
         () => {
-            getProducto(id).then((data) => {
+            getProducto(idParam).then((data) => {
                 setDetalleProducto(data)
             })
         },[]        

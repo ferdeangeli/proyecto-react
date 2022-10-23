@@ -38,3 +38,13 @@ p{
     font-size: 18px;
     font-weight: 400;
 }
+
+.agregarCarrito{
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: fit-content;
+}

@@ -1,7 +1,7 @@
 import "./itemlistcontainer.css";
 import { useState, useEffect } from "react";
 import FlexWrapper from "../FlexWrapper/FlexWrapper";
-import { getProductos } from "../../mockAPI/mockAPI";
+import { getProductos } from "../../services/firebase";
 
 const ItemListContainer = (props) => {
 
@@ -9,8 +9,8 @@ const ItemListContainer = (props) => {
 
     useEffect(
         () => {
-            getProductos().then((data) => {
-            setlistaProductos(data)
+            getProductos().then((resultado) => {
+            setlistaProductos(resultado)
             });
         },[]
     )

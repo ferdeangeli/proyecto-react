@@ -4,14 +4,14 @@ import * as bootstrap from "bootstrap";
 
 const Footer = () => {
     return(
-        <footer class="container-fluid bg-white">
-            <div class="pie">
-                <div class="pieLogo"><a href="#"><img src="/assets/img/navbar/logoCarbono.png" alt="logo"/></a></div>
+        <footer className="container-fluid bg-white">
+            <div className="pie">
+                <div className="pieLogo"><a href="#"><img src="/assets/img/navbar/logoCarbono.png" alt="logo"/></a></div>
                         
-                <div class="row">
+                <div className="row">
                         
-                    <div class="col">
-                        <ul class="pieLinksIzq">
+                    <div className="col">
+                        <ul className="pieLinksIzq">
                             <li><a href="#">Inicio</a></li>
                             <li><a href="#">Impresoras 3D</a></li>
                             <li><a href="#">Filamentos</a></li>
@@ -20,8 +20,8 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div class="col">
-                        <ul class="pieLinksDer">
+                    <div className="col">
+                        <ul className="pieLinksDer">
                             <li><a href="https://wa.me/+542216817762/?text=Hola!%20tengo%20una%20consulta!" target="_blank"><img src="/assets/img/footer/WappLogo.png" alt="logo wapp"/> (0221)15-6817762</a></li>
                             <li><a href="https://wa.me/+542216817762/?text=Hola!%20tengo%20una%20consulta!" target="_blank"><img src="/assets/img/footer/WappLogo.png" alt="logo wapp"/> (02284)15-625238</a></li>
                             <li><a href="https://www.instagram.com/carbono.3d/?hl=es-la" target="_blank"><img src="/assets/img/footer/InstagramLogo.png" alt="logoinstag"/> carbono.3d</a></li>

@@ -35,16 +35,6 @@ strong{
     height: fit-content;
 }
 
-.agregarCarrito{
-    font-size: 16px;
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: fit-content;
-}
-
 h6{
     display: inline-block;
     font-size: 16px;
