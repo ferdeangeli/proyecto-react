@@ -48,3 +48,7 @@ p{
     padding-right: 5px;
     width: fit-content;
 }
+
+.mensajeIsInCart{
+    font-size: 13px;
+}

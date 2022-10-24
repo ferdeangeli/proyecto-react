@@ -42,7 +42,7 @@ const NavBar = (props) => {
                                 <Link className="nav-link active" aria-current="page" to="/">Inicio</Link>
                                 </li>
                                 <li className="nav-item">
-                                <Link className="nav-link" aria-current="page" to="/a">Impresoras 3D</Link>
+                                <Link className="nav-link" aria-current="page" to="#">Impresoras 3D</Link>
                                 </li>
                                 <li className="nav-item">
                                 <Link className="nav-link" aria-current="page" to="#">Filamentos</Link>

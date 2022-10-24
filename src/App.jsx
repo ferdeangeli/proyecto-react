@@ -10,6 +10,7 @@ import FirebaseApp from "./services/firebase";
 import UserForm from "./components/UserForm/UserForm";
 import CartView from "./components/CartView/Cartview";
 import { CartContextProvider } from "./context/CartContext";
+import BuyerData from "./components/UserForm/BuyerData";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
               <Route path="/item/:id" element={<ItemDetailContainer />} />
               <Route path="/login" element={<UserForm />} />
               <Route path="/cartview" element={<CartView />} />
+              <Route path="/datos" element={<BuyerData />}/>
             </Routes>
             <Footer />
           </div>        

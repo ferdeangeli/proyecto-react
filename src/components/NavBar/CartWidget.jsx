@@ -1,15 +1,18 @@
 import "./navbar.css";
 import { useContext } from "react";
 import { cartContext } from "../../context/CartContext";
+import ItemCount from "../ItemCount/ItemCount";
 
 const CartWidget = () => {
 
-    const cart = useContext(cartContext).cart
-
+    const {getTotalItemCount} = useContext(cartContext)
+    
+    let total = getTotalItemCount()
+    
     return(
         <div className="cartWidget">
             <img src="/assets/img/navbar/CartWidget.png" alt="cartwidget" />
-            <p>122</p>
+            <p>{total}</p>
         </div>
     )
 }
