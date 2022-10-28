@@ -68,7 +68,12 @@
     text-align: center;
 }
 
-.finalizarCompra{
+.cartButtonsContainer{
+    display: flex;
+    gap: 15px;
+}
+
+.checkoutButton{
     font-size: 16px;
     background-color: white;
     color: black;
@@ -76,4 +81,32 @@
     padding-left: 5px;
     padding-right: 5px;
     width: fit-content;
+}
+
+.clearCartButton{
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: fit-content;
+}
+
+.removeItem{
+    margin: 0%;
+    display: flex;
+    vertical-align: middle;
+
+}
+
+.removeItem img{
+    height: 30px;
+    width: auto;
+    padding: 0%;
+    margin: 0%;
+}
+
+.inputCount{
+    width: 50px;
 }

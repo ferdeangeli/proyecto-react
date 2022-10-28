@@ -4,6 +4,7 @@ import { useContext, useState } from "react";
 import { cartContext, CartContextProvider } from "../../context/CartContext";
 import { userContext } from "../../context/UserContext";
 import { Link } from "react-router-dom";
+import { SpinnerCircular } from 'spinners-react';
 
 const ItemDetail = ({id, img, category, title, brand, price, description, stock} ) => {
 
@@ -27,33 +28,35 @@ const ItemDetail = ({id, img, category, title, brand, price, description, stock}
 
     const isInCart = cart.find(item => item.id === id)
 
-    if(isInCart != undefined){
-        return(
-            <div className="detailContainer">
-                <img className="detailImg" src={img} alt="" />
-                <div className="detailDescripcion">
-                    <h1 className="detailPrecio">$ {price}</h1>
-                    <h1>{title}</h1>
-                    <p className="detailText">{description}</p>
-                    <p className="mensajeIsInCart">El producto ya se encuentra en el carrito</p>
-                    <Link to="/cartview" style={{textDecoration: 'none', color: 'white'}}>Ver Carrito</Link>
-                </div>
-            </div>
-        )
-    }else{
-        return(
-            <div className="detailContainer">
-                <img className="detailImg" src={img} alt="" />
-                <div className="detailDescripcion">
-                    <h1 className="detailPrecio">$ {price}</h1>
-                    <h1>{title}</h1>
-                    <p className="detailText">{description}</p>
-                    <ItemCount onAddToCart={handleAddToCart} stock={stock}/>
-                </div>
-            </div>
-        )
-    }
+    return(
+        (title != undefined)
+        ?
+        
+        <div className="detailContainer">
+            <img className="detailImg" src={img} alt="" />
+            <div className="detailDescripcion">
+                <h1 className="detailPrecio">$ {price}</h1>
+                <h1>{title}</h1>
+                <p className="detailText">{description}</p>
 
+                {(isInCart != undefined)
+                ?
+                <>
+                <p className="mensajeIsInCart">El producto ya se encuentra en el carrito</p>
+                <Link to="/cartview" style={{textDecoration: 'none', color: 'white'}}>Ver Carrito</Link>
+                </>
+                :
+                <ItemCount onAddToCart={handleAddToCart} stock={stock}/>}
+            </div>
+        </div>
+        
+        :
+
+        <div className="spinner">
+            <SpinnerCircular size={54} thickness={72} speed={129} color="#36ad47" secondaryColor="rgba(0, 0, 0, 0.44)" />
+        </div>
+        
+    )
 
 }
 

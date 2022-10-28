@@ -52,3 +52,10 @@ p{
 .mensajeIsInCart{
     font-size: 13px;
 }
+
+.spinner{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

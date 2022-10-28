@@ -30,17 +30,18 @@ const CartContextProvider = (props) => {
         return totalPrice;
     }
 
-    const removeFromCart = () => {
-
+    const removeFromCart = (title) => {
     }
 
-    const clearCart = () => {
+    
 
+    const clearCart = () => {
+        setCart([])
     }
     
 
     return(
-        <cartContext.Provider value={{cart, addToCart, removeFromCart, clearCart, getTotalItemCount, getTotalPrice}}>
+        <cartContext.Provider value={{cart, setCart, addToCart, removeFromCart, clearCart, getTotalItemCount, getTotalPrice}}>
             {props.children}
         </cartContext.Provider>
     )

@@ -1,5 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, doc, getDoc, addDoc} from "firebase/firestore";
+import Swal from 'sweetalert2';
+import { useContext } from "react";
+import { cartContext } from "../context/CartContext";
 
 
 const firebaseConfig = {
@@ -33,6 +36,29 @@ export async function getProducto(idParam){
   return {id: dataProducto.id, ...dataProducto.data()}
 }
 
+
+export async function crearDocCompra(customerEmail, customerName, customerSurname, customerDni, cart, totalPrice) {
+
+  const docPedido = await addDoc(collection(db, "pedidos"),{
+      email: customerEmail,
+      nombre: customerName,
+      apellido: customerSurname,
+      dni: customerDni,
+      pedido: cart,
+      total: totalPrice
+  } ).then(data => 
+      Swal.fire(
+      'Muchas gracias por su compra',
+      'Su compra fue procesada',
+      'success')  
+
+    ).catch(error => 
+      Swal.fire(
+        'Ocurrió un error',
+        'La compra no pudo ser procesada, intente de nuevo',
+        'error')
+    )
+}
 
 
 /* const data = [
