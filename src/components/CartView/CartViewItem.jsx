@@ -2,7 +2,6 @@ import "./cartview.css";
 import { useContext } from "react";
 import { cartContext } from "../../context/CartContext";
 import RemoveButton from "./RemoveButton"
-import ItemCount from "../ItemCount/ItemCount"
 
 const CartViewItem = (props) => {
 

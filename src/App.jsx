@@ -1,12 +1,10 @@
 import "bootstrap/dist/css/bootstrap.css";
-import * as bootstrap from "bootstrap";
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Footer from './components/Footer/Footer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {UserContextProvider} from './context/UserContext';
-import FirebaseApp from "./services/firebase";
 import UserForm from "./components/UserForm/UserForm";
 import CartView from "./components/CartView/Cartview";
 import { CartContextProvider } from "./context/CartContext";

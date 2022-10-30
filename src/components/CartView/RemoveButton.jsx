@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { cartContext } from "../../context/CartContext";
-import CartView from "./Cartview";
 
 const RemoveButton = (props) =>{
 

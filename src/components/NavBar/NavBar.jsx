@@ -1,6 +1,5 @@
 import "./navbar.css";
 import "bootstrap/dist/css/bootstrap.css";
-import * as bootstrap from "bootstrap";
 import {Link} from "react-router-dom";
 import {useContext} from 'react';
 import {userContext} from '../../context/UserContext'

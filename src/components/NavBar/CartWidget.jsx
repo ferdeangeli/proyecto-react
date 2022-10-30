@@ -1,8 +1,6 @@
 import "./navbar.css";
 import { useContext } from "react";
 import { cartContext } from "../../context/CartContext";
-import ItemCount from "../ItemCount/ItemCount";
-import { useState } from "react";
 
 const CartWidget = () => {
 

@@ -1,8 +1,7 @@
 import "./itemdetail.css";
 import ItemCount from "../ItemCount/ItemCount";
 import { useContext, useState } from "react";
-import { cartContext, CartContextProvider } from "../../context/CartContext";
-import { userContext } from "../../context/UserContext";
+import { cartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 import { SpinnerCircular } from 'spinners-react';
 
