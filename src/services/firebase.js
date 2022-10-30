@@ -46,18 +46,7 @@ export async function crearDocCompra(customerEmail, customerName, customerSurnam
       dni: customerDni,
       pedido: cart,
       total: totalPrice
-  } ).then(data => 
-      Swal.fire(
-      'Muchas gracias por su compra',
-      'Su compra fue procesada',
-      'success')  
-
-    ).catch(error => 
-      Swal.fire(
-        'Ocurrió un error',
-        'La compra no pudo ser procesada, intente de nuevo',
-        'error')
-    )
+  } )
 }
 
 

@@ -64,8 +64,18 @@
 
 .cartItemContainer p{
     margin: 0%;
-    width: 15%;
+    width: 25%;
     text-align: center;
+}
+
+.cartItemContainer div{
+    display: flex;
+    flex-direction: column;
+    width: 12%;
+}
+
+.cartItemSubtitle{
+    font-size: 10px;
 }
 
 .cartButtonsContainer{

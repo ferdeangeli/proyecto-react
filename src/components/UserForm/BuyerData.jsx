@@ -5,6 +5,7 @@ import { cartContext } from "../../context/CartContext";
 import { useContext } from "react";
 import "../CartView/cartview.css";
 import { Link } from "react-router-dom";
+import Swal from 'sweetalert2';
 
 
 
@@ -23,6 +24,19 @@ const BuyerData = () => {
     const handleFinalizarCompra = (e) =>{
         e.preventDefault()
         crearDocCompra(customerEmail, customerName, customerSurname, customerDni, cart, totalPrice)
+        .then(data => 
+            Swal.fire(
+            'Muchas gracias por su compra',
+            'Su compra fue procesada',
+            'success')
+          ).catch(error => 
+            Swal.fire(
+              'Ocurrió un error',
+              'La compra no pudo ser procesada, intente de nuevo',
+              'error')
+          ).finally(
+            setCart([])
+          )
     }
     
     

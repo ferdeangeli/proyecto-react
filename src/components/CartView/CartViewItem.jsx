@@ -18,9 +18,20 @@ const CartViewItem = (props) => {
         <div className="cartItemContainer">
             <img src={props.img}></img>
             <h1>{props.title.toUpperCase()}</h1>
-            <input onChange={handleUpdateCount} className="inputCount" type="number" defaultValue={props.count}/>
-            <p>$ {props.price}</p>
-            <p>$ {props.price*props.count}</p>
+            <div>
+                <p className="cartItemSubtitle">Cantidad:</p>
+                <input onChange={handleUpdateCount} className="inputCount" type="number" defaultValue={props.count}/>
+            </div>
+            <div>
+                <p className="cartItemSubtitle">Precio:</p>
+                <p>${props.price}</p>
+            </div>
+            <div>
+                <p className="cartItemSubtitle">Subtotal:</p>
+                <p>${props.price*props.count}</p>
+            </div>
+            
+            
             <RemoveButton id={props.id} />
         </div>
     )

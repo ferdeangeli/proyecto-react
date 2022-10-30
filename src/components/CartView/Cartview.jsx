@@ -30,13 +30,6 @@ const CartView = () => {
                 ?
                 <>
                 <h1 className="tituloCartView">CARRITO DE COMPRAS</h1>
-                <div className="titulosTabla">
-                    <p></p>
-                    <h3>Item</h3>
-                    <h3>Cantidad</h3>
-                    <h3>Precio</h3>
-                    <h3>Subtotal</h3>
-                </div>
                 <CartWrapper cart={cart} />
                 <strong>TOTAL: $ {totalPrice}</strong>
                 <div className="cartButtonsContainer">

@@ -6,6 +6,9 @@ const CartContextProvider = (props) => {
 
     const [cart, setCart] = useState([]);
 
+
+    //Agregar un item al carrito
+
     const addToCart = (newProd, count) => {
         const newCart = [...cart]
         const newCartItem = {...newProd, count}
@@ -61,6 +64,7 @@ const CartContextProvider = (props) => {
     }
 
     
+    //Vaciar carrito
 
     const clearCart = () => {
         setCart([])
