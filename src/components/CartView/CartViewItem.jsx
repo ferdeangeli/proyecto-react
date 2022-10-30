@@ -6,14 +6,22 @@ import ItemCount from "../ItemCount/ItemCount"
 
 const CartViewItem = (props) => {
 
+    const{updateCount} = useContext(cartContext)
+
+    const handleUpdateCount = (e) => {
+        e.preventDefault()
+        const newCount= e.target.value
+        updateCount(props.id, newCount)
+    }
+
     return(
         <div className="cartItemContainer">
             <img src={props.img}></img>
             <h1>{props.title.toUpperCase()}</h1>
-            <input className="inputCount" type="number" defaultValue={props.count}/>
+            <input onChange={handleUpdateCount} className="inputCount" type="number" defaultValue={props.count}/>
             <p>$ {props.price}</p>
             <p>$ {props.price*props.count}</p>
-            <RemoveButton title={props.title}  />
+            <RemoveButton id={props.id} />
         </div>
     )
 

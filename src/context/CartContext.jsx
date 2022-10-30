@@ -13,14 +13,21 @@ const CartContextProvider = (props) => {
         setCart(newCart);
     }
     
+
+    //Obtener la cantidad total de items del carrito
+
     const getTotalItemCount = () => {
         let newCount = 0
-        cart.forEach((item)=>{
-            newCount += item.count
+        const cartCount = [...cart]
+        cartCount.forEach((item)=>{
+            newCount += Number(item.count)
         })
 
         return newCount;
     }
+
+
+    //Obtener el precio total del carrito
 
     const getTotalPrice = () => {
         let totalPrice = 0
@@ -30,7 +37,27 @@ const CartContextProvider = (props) => {
         return totalPrice;
     }
 
-    const removeFromCart = (title) => {
+
+    //Eliminar del carrito un item
+
+    const removeFromCart = (id) => {
+        const indexDelete = cart.findIndex(item => item.id === id)
+        const newCart = [...cart]
+        newCart.splice(indexDelete,1)
+        setCart(newCart);   
+    }
+
+
+    //Actualizar cantidad en carrito
+
+    const updateCount = (id, newCount) => {
+        const indexActualizarCount = cart.findIndex(item => item.id === id)
+        const newCart = [...cart]
+        const updateProduct = newCart[indexActualizarCount]
+        updateProduct.count = newCount
+        newCart.splice(indexActualizarCount,1)
+        newCart.push(updateProduct)
+        setCart(newCart)   
     }
 
     
@@ -41,7 +68,7 @@ const CartContextProvider = (props) => {
     
 
     return(
-        <cartContext.Provider value={{cart, setCart, addToCart, removeFromCart, clearCart, getTotalItemCount, getTotalPrice}}>
+        <cartContext.Provider value={{cart, setCart, addToCart, removeFromCart, clearCart, updateCount, getTotalItemCount, getTotalPrice}}>
             {props.children}
         </cartContext.Provider>
     )

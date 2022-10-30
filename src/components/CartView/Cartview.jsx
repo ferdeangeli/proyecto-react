@@ -10,6 +10,7 @@ import { SpinnerCircular } from 'spinners-react';
 const CartView = () => {
     const {cart} = useContext(cartContext)
     const {getTotalPrice} = useContext(cartContext)
+    const {clearCart} = useContext(cartContext)
     const totalPrice = getTotalPrice()
     
     return(
@@ -39,7 +40,7 @@ const CartView = () => {
                 <CartWrapper cart={cart} />
                 <strong>TOTAL: $ {totalPrice}</strong>
                 <div className="cartButtonsContainer">
-                    <button className="clearCartButton">Vaciar carrito</button>
+                    <button onClick={clearCart} className="clearCartButton">Vaciar carrito</button>
                     <Link to={"/datos"}><button className="checkoutButton">Finalizar Compra</button></Link>
                 </div>
                 <br />

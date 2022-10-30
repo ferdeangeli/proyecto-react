@@ -1,13 +1,14 @@
 import { useContext } from "react";
 import { cartContext } from "../../context/CartContext";
+import CartView from "./Cartview";
 
 const RemoveButton = (props) =>{
 
     const {removeFromCart} = useContext(cartContext)
 
-    const handleRemoveItem = (e) =>{
+    const handleRemoveItem = (e) => {
         e.preventDefault()
-        removeFromCart()
+        removeFromCart(props.id)
     }
 
     return(
