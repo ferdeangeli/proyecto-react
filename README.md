@@ -1,73 +1,28 @@
-# Acerca del proyecto
+# CARBONO APP
 
-Este proyecto fue realizado como entrega final del Curso React JS de Coderhouse. Se trata de una tienda online de insumos para impresion 3D, desarrollada en React JS.
+## Sobre la APP
 
-## 
+Este proyecto fue realizado como entrega final del Curso React JS de Coderhouse. Se trata de una tienda online de insumos para impresion 3D, desarrollada en React JS. Se utilizaron para su desarrollo:
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* React: hooks (useState, useEffect, useContext)
+* Bootstrap
+* Firebase
 
 
-<h1 align="center">
-  <br>
-  <a href="#"><img src="../proyecto-react/public/assets/img/navbar/logoCarbono.png" alt="logoCarbono" width="200"></a>
-  <br>
-  Carbono APP
-  <br>
-</h1>
+Actualmente la APP permite realizar las siguientes tareas:
 
-<h4 align="center">Una tienda virtual para los amantes de la  <a href="# target="_blank">impresion 3D</a>.</h4>
+* Visualizar catalogo de productos
+* Ingresar al detalle de cada producto individual haciendo click
+* Seleccionar una cantidad y agregar al carrito. No se permite añadir 2 veces el mismo producto al carrito.  
+* Ingreso al carrito de compras. Se muestra detalle de los items agregados, con calculo de subtotales y total de la compra.
+* Dentro del carrito, es posible modificar cantidades, eliminar items individualmente (se actualizan los subtotales y total), vaciar carrito y realizar checkout.
+* Checkout: antes de finalizar el checkout se solicitaran datos del comprador y luego se enviaran los datos personales y del pedido a la base de datos de pedidos, en Firebase.
+* Login: es posible realizar login, pero solo esta desarrollado para interactuar visualmente con el Navbar. Queda pendiente realizar base de dato de usuarios y autenticación.
 
+Puntos a desarrollar:
 
-<p align="center">
-  <a href="#key-features">Sobre la APP</a> •
-  <a href="#license">Licencia</a>
-</p>
-
-![screenshot](../proyecto-react/public/assets/img/Capturareadme.JPG)
-
-## Key Features
-
-* LivePreview - Make changes, See changes
-  - Instantly see what your Markdown documents look like in HTML as you create them.
-* Sync Scrolling
-  - While you type, LivePreview will automatically scroll to the current location you're editing.
-* GitHub Flavored Markdown  
-* Syntax highlighting
-* [KaTeX](https://khan.github.io/KaTeX/) Support
-* Dark/Light mode
-* Toolbar for basic Markdown formatting
-* Supports multiple cursors
-* Save the Markdown preview as PDF
-* Emoji support in preview :tada:
-* App will keep alive in tray for quick usage
-* Full screen mode
-  - Write distraction free.
-* Cross platform
-  - Windows, macOS and Linux ready.
-
+* Login: autenticación. Creación de cuentas admin para gestionar productos y stocks, como también realizar bajadas de datos y estadísticas de ser necesario. 
+* Buscador: aprovechar la clasificación de cada producto para organizarlo en paneles o búsquedas/filtros.
 
 ## License
 
