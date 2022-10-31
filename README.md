@@ -32,38 +32,21 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 <h1 align="center">
   <br>
-  <a href="#"><img src="/assets/img/logo.png" alt="Markdownify" width="200"></a>
+  <a href="#"><img src="/assets/img/navbar/logoCarbono.png" alt="logoCarbono" width="200"></a>
   <br>
   Carbono APP
   <br>
 </h1>
 
-<h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
+<h4 align="center">Una tienda virtual para los amantes de la  <a href="http://electron.atom.io" target="_blank">impresion 3D</a>.</h4>
+
 
 <p align="center">
-  <a href="https://badge.fury.io/js/electron-markdownify">
-    <img src="https://badge.fury.io/js/electron-markdownify.svg"
-         alt="Gitter">
-  </a>
-  <a href="https://gitter.im/amitmerchant1990/electron-markdownify"><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
-  <a href="https://saythanks.io/to/bullredeyes@gmail.com">
-      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
-  </a>
-  <a href="https://www.paypal.me/AmitMerchant">
-    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
-  </a>
+  <a href="#key-features">Sobre la APP</a> •
+  <a href="#license">Licencia</a>
 </p>
 
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
-  <a href="#license">License</a>
-</p>
-
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
+![screenshot](/assets/img/Capturareadme.jpg)
 
 ## Key Features
 
